@@ -100,10 +100,10 @@ Public Class Service1
         Catch soapex As Exception
             '-- Close Database Connection --'
             Connection.Close()
+            
+            'prompt user with results
             Return "There was an error processing your request"
         End Try
-
-        '-- Close Database Connection --'
 
     End Function
 
